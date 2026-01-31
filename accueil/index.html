@@ -1,14 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Accueil</title>
+<meta charset="UTF-8">
+<title>Site Kragnagna</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0b0f1a;
+    color: white;
+}
+
+/* ===== HEADER AVEC IMAGE DE FOND ===== */
+header {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url("https://picsum.photos/id/1018/1920/1080");
+    background-size: cover;
+    background-position: center;
+}
+
+/* overlay sombre */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 10, 25, 0.75);
+}
+
+header h1,
+header p {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 700px;
+    opacity: 0.85;
+    font-size: 1.1rem;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* ===== CARD ===== */
+.card {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #11182b;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0.5;
+    font-size: 0.85rem;
+}
+</style>
 </head>
+
 <body>
-  <h1>Accueil</h1>
-  <p>Bienvenue !</p>
-  <a href="../NSI/Provence-Lavande site
-/web_ambroise_page_accueil.html">Projet NSI</a>
+
+<header>
+    <h1>Mon site</h1>
+    <p>Page d’accueil principale. Un point d’entrée vers mes projets, mes idées et ce que j’ai envie de montrer.</p>
+</header>
+
+<main>
+    <div class="grid">
+
+        <a href="../NSI/Provence-Lavande site
+/web_ambroise_page_accueil.html" class="card">
+            <img src="https://picsum.photos/id/180/800/500" alt="Projet NSI">
+            <div class="card-content">
+                <h2>Projet NSI</h2>
+                <p>Programmation, logique, expériences et projets informatiques.</p>
+            </div>
+        </a>
+
+        <a href="../NSI/Provence-Lavande site
+/web_ambroise_page_accueil.html" class="card">
+            <img src="https://picsum.photos/id/1015/800/500" alt="Provence">
+            <div class="card-content">
+                <h2>Site Provence</h2>
+                <p>Découverte, paysages et culture de la Provence.</p>
+            </div>
+        </a>
+
+        <a href="../autre.html" class="card">
+            <img src="https://picsum.photos/id/1060/800/500" alt="Autres projets">
+            <div class="card-content">
+                <h2>Autres projets</h2>
+                <p>Tout ce que je fais par curiosité ou par envie.</p>
+            </div>
+        </a>
+
+    </div>
+</main>
+
+<footer>
+    © 2026 — Kragnagna
+</footer>
+
 </body>
 </html>
