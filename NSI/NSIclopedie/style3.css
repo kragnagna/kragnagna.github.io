@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f1eb;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #aaa;
+}
+
+.header {
+    width: 900px;
+    max-width: calc(100% - 30px);
+    min-height: 75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #222;
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.logo span {
+    color: #8e1111;
+    font-weight: bold;
+}
+
+.sous-titre {
+    margin: 0;
+    color: #777;
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    align-self: flex-end;
+}
+
+nav a {
+    padding: 8px 13px;
+    color: #333;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    background: #eee;
+    text-decoration: none;
+}
+
+nav .actif {
+    border: 1px solid #aaa;
+    border-bottom: 1px solid white;
+    background: white;
+    color: #8e1111;
+}
+
+.page {
+    width: 850px;
+    max-width: calc(100% - 30px);
+    margin: 40px auto 60px;
+}
+
+.bienvenue {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.bienvenue h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 31px;
+    font-weight: normal;
+}
+
+.bienvenue p {
+    max-width: 700px;
+    margin: 8px auto;
+    color: #555;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+section h2 {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    margin-top: 35px;
+}
+
+.boite {
+    background: white;
+    border: 1px solid #999;
+    margin: 30px 0;
+}
+
+.petit-titre {
+    margin: 0;
+    padding: 6px 12px;
+    border-bottom: 1px solid #aaa;
+    background: #e9e7e2;
+    color: #555;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.une {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 150px;
+    gap: 30px;
+    align-items: center;
+}
+
+.une h2 {
+    margin: 0 0 8px;
+}
+
+.une p {
+    color: #444;
+}
+
+.imgindex {
+    display: block;
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    border: 1px solid #999;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.article {
+    min-width: 0;
+    min-height: 125px;
+    padding: 17px;
+    border: 1px solid #aaa;
+    background: white;
+    display: grid;
+    grid-template-columns: 35px minmax(0, 1fr);
+    gap: 12px;
+    color: #222;
+}
+
+.article:hover {
+    background: #f8f8f8;
+    text-decoration: none;
+    border-color: #777;
+}
+
+.article h3 {
+    margin: 0 0 5px;
+    color: #0645ad;
+    font-size: 17px;
+}
+
+.article p {
+    margin: 0;
+    color: #555;
+    font-size: 12px;
+}
+
+.numero {
+    color: #999;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.note {
+    max-width: 750px;
+    margin: 20px 0;
+    padding: 10px 13px;
+    border-left: 3px solid #999;
+    background: #eceae5;
+    color: #555;
+    font-size: 12px;
+}
+
+footer {
+    padding: 15px;
+    border-top: 1px solid #999;
+    background: #e7e5e0;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+@media (max-width: 700px) {
+    .header {
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav {
+        margin-top: 8px;
+        overflow-x: auto;
+    }
+
+    .page {
+        margin-top: 25px;
+    }
+
+    .une {
+        grid-template-columns: minmax(0, 1fr) 120px;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .imgindex {
+        width: 120px;
+        height: 120px;
+    }
+
+    .articles {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .header {
+        max-width: calc(100% - 20px);
+    }
+
+    nav a {
+        padding: 7px 9px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .page {
+        max-width: calc(100% - 20px);
+    }
+
+    .bienvenue h1 {
+        font-size: 26px;
+    }
+
+    .une {
+        grid-template-columns: 1fr;
+    }
+
+    .imgindex {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}

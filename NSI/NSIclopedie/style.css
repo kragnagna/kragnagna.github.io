@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    background: #f4f1eb;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #aaa;
+}
+
+.header {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #222;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #8e1111;
+    font-weight: bold;
+}
+
+.soustitre {
+    margin: 0;
+    color: #777;
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    padding: 8px 13px;
+    color: #333;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    background: #eee;
+    text-decoration: none;
+}
+
+nav .actif {
+    border: 1px solid #aaa;
+    border-bottom: 1px solid white;
+    background: white;
+    color: #8e1111;
+}
+
+.page {
+    width: 850px;
+    margin: 40px auto 60px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 34px;
+    margin: 0;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 23px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    margin-top: 35px;
+}
+
+h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+p {
+    color: #444;
+}
+
+.titre {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #888;
+    margin-bottom: 25px;
+}
+
+.titre h1 {
+    margin: 0;
+}
+
+.titre .soustitre {
+    margin-top: 2px;
+}
+
+.image {
+    float: right;
+    width: 260px;
+    margin: 5px 0 15px 20px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.article {
+    padding: 17px;
+    border: 1px solid #aaa;
+    background: white;
+}
+
+.article:hover {
+    background: #f8f8f8;
+}
+
+.sommaire {
+    width: 315px;
+    margin: 25px 0;
+    padding: 8px 15px;
+    border: 1px solid #999;
+    background: #fafafa;
+}
+
+.sommaire h2 {
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #aaa;
+    background: #e8e6e1;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sommaire li {
+    margin: 3px 0;
+}
+
+pre {
+    background: #e9e9e9;
+    padding: 13px;
+    border: 1px solid #888;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+.fin {
+    margin-top: 45px;
+    padding-top: 10px;
+    border-top: 1px solid #aaa;
+    color: #777;
+    font-size: 10px;
+}
+
+.fin p {
+    margin: 3px 0;
+}
+
+.pageia section {
+    display: flow-root;
+    margin-top: 35px;
+}
